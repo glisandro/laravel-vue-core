@@ -1,4 +1,4 @@
-![example workflow](https://github.com/glisandro/laravel-vue-core/actions/workflows/tests.yml/badge.svg)
+[![example workflow](https://github.com/glisandro/laravel-vue-core/actions/workflows/tests.yml/badge.svg)](https://github.com/glisandro/laravel-vue-core/actions)
 
 ## About this package
 
