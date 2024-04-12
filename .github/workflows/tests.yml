@@ -38,18 +38,17 @@ jobs:
       
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
-    
-    - name: Clear Cache
-      run: php artisan cache:clear
-
-    - name: Run Migration
-      run: php artisan migrate --seed
         
     - name: Install NPM dependencies
       run: npm i
 
-    - name: Execute tests
-      run: 'vendor/bin/phpunit'
+    - name: Create Database
+      run: |
+        mkdir -p database
+        touch database/database.sqlite
+        
+    - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite
-        DB_DATABASE: ":memory:"
+        DB_DATABASE: database/database.sqlite
+      run: vendor/bin/phpunit --testdox
