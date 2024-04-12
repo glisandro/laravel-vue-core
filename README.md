@@ -1,3 +1,5 @@
+![example workflow](https://github.com/glisandro/laravel-vue-core/actions/workflows/tests.yml/badge.svg)
+
 ## About this package
 
 The best packages that should be in every laravel-vue application.
