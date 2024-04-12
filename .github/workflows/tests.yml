@@ -1,4 +1,4 @@
-name: Laravel
+name: Tests
 
 on:
   push:
@@ -39,6 +39,9 @@ jobs:
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
 
+    - name: Run Migration
+      run: php artisan migrate
+        
     - name: Install NPM dependencies
       run: npm i
 
