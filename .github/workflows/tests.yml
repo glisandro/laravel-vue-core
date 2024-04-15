@@ -16,7 +16,7 @@ jobs:
         php: [8.2, 8.3]
         laravel: [11.*]
         phpunit: [10.*]
-        stability: [prefer-lowest, prefer-stable]
+        stability: [prefer-stable]
     
     name: P${{ matrix.php }} - L${{ matrix.laravel }} PU${{ matrix.phpunit }} - ${{ matrix.stability }}
     
