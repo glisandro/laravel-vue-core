@@ -8,3 +8,4 @@ The best packages that should be in every laravel-vue application.
 - [Laravel Pint](https://laravel.com/docs/11.x/pint).
 - [GitHub Actions](https://github.com/glisandro/laravel-vue-core/actions). Not downloadable, manual configuration required.
 - [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components). 
+- [Laravel Socialite ](https://laravel.com/docs/11.x/socialite) Login/Register with Google

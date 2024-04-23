@@ -98,6 +98,7 @@ const submit = () => {
                     Register
                 </PrimaryButton>
             </div>
+            <OrSignInWithGoogle />
         </form>
     </GuestLayout>
 </template>

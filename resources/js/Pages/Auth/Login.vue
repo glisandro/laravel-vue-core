@@ -89,6 +89,7 @@ const submit = () => {
                     Log in
                 </PrimaryButton>
             </div>
+            <OrSignInWithGoogle />
         </form>
     </GuestLayout>
 </template>
