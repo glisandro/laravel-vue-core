@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 
 class GoogleLoginController extends Controller
@@ -19,12 +19,11 @@ class GoogleLoginController extends Controller
         $googleUser = Socialite::driver('google')->stateless()->user();
         $user = User::where('email', $googleUser->email)->first();
 
-        if(!$user)
-        {
+        if (! $user) {
             $user = User::create([
-                'name' => $googleUser->name, 
-                'email' => $googleUser->email, 
-                'password' => bcrypt(request(Str::random()))
+                'name' => $googleUser->name,
+                'email' => $googleUser->email,
+                'password' => bcrypt(request(Str::random())),
             ]);
         }
 
